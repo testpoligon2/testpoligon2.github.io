@@ -4,8 +4,8 @@
 }
 
 .header {
-  background-color: darkred;
-  height: 90px;
+  background-color: #812;
+  height: 130px;
   font-size: 0.9em;
   margin-left: 0px;
   margin-right: 0px;
@@ -28,7 +28,63 @@
   letter-spacing: 0.1em;
   text-decoration: none;
 }
+.menubar {
+  width: 900px;
+  height: 46px;
+}
 
+ul.menu {
+  float: right;
+  position: left;
+}
+
+ul.menu li {
+  float: left;
+  padding: 0 0 0 2px;
+  list-style: none;
+  margin: 10px 0px 0 0;
+  position: relative;
+}
+
+ul.menu li a {
+  justify-content: center;
+  font: normal 100% 'trebuchet ms', sans-serif;
+  display: block;
+  height: 20px;
+  padding: 6px 35px 5px 28px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+ul.menu li > a i.fa{
+  position: absolute;
+  left: 12px;
+
+}
+
+ul.menu li.selected a {
+  color: #aeb002;
+}
+
+ul.menu li a:hover {
+  background-color: grey;
+  color: #e4ec04;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: 0.3s;
+}
+ul.menu li ul {
+  background-color: #444;
+}
+.menu li ul{
+  position: absolute;
+  min-width: 120px;
+  max-width: 200px;
+  display: none;
+
+}
+.menu li:hover > ul{
+  display: block;
+}
 .content{
   margin: 20px 0 0 200px;
 
@@ -51,10 +107,12 @@
 
 }
 .btn {
-  padding: 13px;
+  padding:   10px 20px  10px 20px;
   text-align:center;
-  color:#fff;
+  color:#ddd;
+  background: green;
   font-weight:bold;
   cursor:pointer;
   border-radius: 8px;
+  border-bottom: 3px solid #264;
 }
